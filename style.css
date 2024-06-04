@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ff8c00;
+}
+
+h2 {
+  color: #ffe4e1;
+  font-size: 30px;
+}
+
+p {
+  color: #ffe4e1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.header_container {
+  background-color: #b22222;
+  margin: 100px 100px 100px 100px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.task-name,
+.task-description {
+  border-radius: 15px;
+  width: 700px;
+  height: 150px;
+}
+
+.wait_container,
+.done_container {
+  border-radius: 15px;
+}
+
+.task-name {
+  background-color: #e9967a;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.task-name h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.task-name input {
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+.task-description {
+  background-color: #e9967a;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-description h2 {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.task-description input {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+.task-description select {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+.todo_add {
+  margin-bottom: 20px;
+  margin-left: 250px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #e9967a;
+  color: #ffe4e1;
+  font-size: 20px;
+}
+
+.wait_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #e9967a;
+}
+
+.wait_container_left {
+  background-color: #e9967a;
+  border-radius: 15px;
+}
+
+.wait_container_left h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.wait_container_right {
+  display: flex;
+  justify-content: center;
+}
+
+.wait_container_right_accept {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.wait_container_right_accept img {
+  width: 75px;
+  height: 50px;
+}
+
+.wait_container_right_accept button {
+  border: medium none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  background-image: none;
+  background: transparent;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wait_container_right_accept button:hover {
+  color: #432c81;
+}
+
+.done_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #e9967a;
+}
+
+.done_container_left {
+  background-color: #e9967a;
+  border-radius: 15px;
+}
+
+.done_container_left h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.done_container_right {
+  display: flex;
+  margin-right: 3px;
+  flex-direction: column;
+}
+
+.done_container_right img {
+  margin-top: 10px;
+  width: 120px;
+  height: 100px;
+}
+
+.done_container_right button {
+  gap: 10px;
+  border: medium none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  background-image: none;
+  background: transparent;
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.done_container_right button:hover {
+  color: #432c81;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  background-color: #e9967a;
+}
+
+.item button {
+  border: medium none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  border-radius: 15px;
+  background-color: aqua;
+  float: left;
+  cursor: pointer;
+}

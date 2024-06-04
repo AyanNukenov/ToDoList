@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list - JS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>ToDo List</h1>
+      <div class="header_container">
+        <div class="main_container">
+          <form class="form">
+            <div class="task-name">
+              <h2>ЗАГОЛОВОК ЗАДАЧИ</h2>
+              <input
+                type="text"
+                id="task_name"
+                placeholder="Введите название задачи"
+              />
+            </div>
+
+            <div class="task-description">
+              <h2>ОПИСАНИЕ ЗАДАЧИ</h2>
+              <input
+                type="text"
+                id="task_description"
+                placeholder="Введите описание задачи"
+              />
+              <select name="" id="task_status">
+                <option value="" hidden>Направление задачи</option>
+                <option value="Личная_задача" id="task_way">
+                  Личная задача
+                </option>
+                <option value="Рабочая_задача" id="task_way_2">
+                  Рабочая задача
+                </option>
+              </select>
+            </div>
+
+            <input type="submit" value="Создать" class="todo_add" />
+          </form>
+
+          <div class="wait_container">
+            <div class="wait_container_left">
+              <h2>ОЖИДАЮЩИЕ</h2>
+            </div>
+
+            <div class="wait"></div>
+          </div>
+
+          <div class="done_container">
+            <div class="done_container_left">
+              <h2>ВЫПОЛНЕННЫЕ</h2>
+            </div>
+            <div class="done_container_right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
